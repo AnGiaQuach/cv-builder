@@ -22,8 +22,6 @@ function App() {
         }),
       };
 
-      console.log(cvInfo[`${table}`]);
-
       setCvInfo(newCv);
     };
 
@@ -44,7 +42,11 @@ function App() {
             setCvInfo={setCvInfo}
             handleInputChange={handleInputChange}
           ></EducationTable>
-          <ExperienceTable cv={cvInfo} setCvInfo={setCvInfo}></ExperienceTable>
+          <ExperienceTable
+            cv={cvInfo}
+            setCvInfo={setCvInfo}
+            handleInputChange={handleInputChange}
+          ></ExperienceTable>
         </div>
         <div className="cv-displayer">
           <div className="a4-paper dark-shadow">

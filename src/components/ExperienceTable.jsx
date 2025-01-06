@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import CardInput from "./CardInput";
 
-export default function ExperienceTable({ setCvInfo, cv }) {
+export default function ExperienceTable({ setCvInfo, cv, handleInputChange }) {
   const [nextId, setNextId] = useState(0);
 
   function newExperienceCard() {
@@ -18,17 +18,7 @@ export default function ExperienceTable({ setCvInfo, cv }) {
   }
 
   function createHandleChange(type, id) {
-    const handler = (e) => {
-      const newCv = {
-        ...cv,
-        experience: cv.experience.map((item) =>
-          item.id === id ? { ...item, [type]: e.target.value } : item
-        ),
-      };
-
-      setCvInfo(newCv);
-    };
-    return handler;
+    return handleInputChange("experience", type, id);
   }
 
   function addExperienceCard() {
