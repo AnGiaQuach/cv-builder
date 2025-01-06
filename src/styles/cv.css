@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.opt-panel {
+  width: 25%;
+  height: 100%;
+  border: 3px solid red;
+
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.cv-displayer {
+  width: 75%;
+  height: 100%;
+  border: 3px solid red;
+
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.a4-paper {
+  width: 55%;
+  aspect-ratio: 8.27 / 11.67;
+}
+
+.card {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-card {
+  margin-top: 1rem;
+}
+
+/*detail section*/
+.seperate-line {
+  width: 65%;
+  border: 2px solid black;
+}
+
+.dark-shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}

@@ -1,0 +1,68 @@
+export const cv = {
+  personal: {
+    name: "Alex",
+    phoneNumber: "1232333222",
+    email: "alex@gmail.com",
+    address: "5033 NE 47th Pl, Portland, OR 97218",
+  },
+  education: [
+    {
+      id: 0,
+      degree: "Bachelor of Science in Computer Science",
+      institution: "Stanford",
+      startYear: 2015,
+      endYear: 2019,
+    },
+    {
+      id: 1,
+      degree: "Master of Science in Software Engineering",
+      institution: "Harvard University",
+      startYear: 2020,
+      endYear: 2022,
+    },
+    {
+      id: 2,
+      degree: "Ph.D. in Artificial Intelligence",
+      institution: "MIT",
+      startYear: 2023,
+      endYear: "Present",
+    },
+  ],
+  experience: [
+    {
+      id: 0,
+      company: "Netflix Inc",
+      jobTitle: "Backend Developer",
+      startYear: 2012,
+      endYear: 2018,
+    },
+    {
+      id: 1,
+      company: "Google Inc",
+      jobTitle: "Software Engineer",
+      startYear: 2019,
+      endYear: 2023,
+    },
+    {
+      id: 2,
+      company: "Amazon Web Services",
+      jobTitle: "Cloud Architect",
+      startYear: 2023,
+      endYear: "Present",
+    },
+    {
+      id: 3,
+      company: "Apple Inc",
+      jobTitle: "Lead Engineer - AI Research",
+      startYear: 2018,
+      endYear: 2020,
+    },
+    {
+      id: 4,
+      company: "Microsoft",
+      jobTitle: "Full Stack Developer",
+      startYear: 2020,
+      endYear: 2022,
+    },
+  ],
+};
