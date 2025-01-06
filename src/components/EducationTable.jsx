@@ -56,25 +56,25 @@ function EducationCard({
         type="text"
         title="Degree"
         value={degree}
-        onChange={createHandleChange("degree", id)}
+        handleChange={createHandleChange("degree", id)}
       ></CardInput>
       <CardInput
         type="text"
         title="Institution"
         value={institution}
-        onChange={createHandleChange("institution", id)}
+        handleChange={createHandleChange("institution", id)}
       ></CardInput>
       <CardInput
         type="number"
         title="Start year"
         value={startYear}
-        onChange={createHandleChange("startYear", id)}
+        handleChange={createHandleChange("startYear", id)}
       ></CardInput>
       <CardInput
         type="number"
         title="End year"
         value={endYear}
-        onChange={createHandleChange("endYear", id)}
+        handleChange={createHandleChange("endYear", id)}
       ></CardInput>
     </div>
   );
