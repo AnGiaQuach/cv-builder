@@ -14,7 +14,7 @@ body {
 .opt-panel {
   width: 25%;
   height: 100%;
-  border: 3px solid red;
+  border: 1px solid black;
 
   display: flex;
   flex-direction: column;
@@ -24,16 +24,16 @@ body {
 .cv-displayer {
   width: 75%;
   height: 100%;
-  border: 3px solid red;
 
   display: flex;
   justify-content: center;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .a4-paper {
   width: 55%;
   aspect-ratio: 8.27 / 11.67;
+  padding: 2rem;
 }
 
 .card {
@@ -61,4 +61,13 @@ body {
 .dark-shadow {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.space-line {
+  margin-top: 1rem;
+}
+
+.name-title {
+  font-size: 3rem;
+  font-weight: bold;
 }

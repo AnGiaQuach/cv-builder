@@ -28,13 +28,30 @@ function App() {
     return handler;
   }
 
+  function handlePersonalInput(type) {
+    const handler = (e) => {
+      const newCv = {
+        ...cvInfo,
+        personal: {
+          ...cvInfo.personal,
+          [`${type}`]: e.target.value,
+        },
+      };
+
+      setCvInfo(newCv);
+    };
+    return handler;
+  }
+
   return (
     <>
       <div className="container">
         <div className="opt-panel">
           <div className="personal-table">
-            Personal Detail
-            <PersonalCard></PersonalCard>
+            <b> Personal Detail</b>
+            <PersonalCard
+              handlePersonalInput={handlePersonalInput}
+            ></PersonalCard>
           </div>
 
           <EducationTable
@@ -50,16 +67,20 @@ function App() {
         </div>
         <div className="cv-displayer">
           <div className="a4-paper dark-shadow">
-            <div className="name">Alex</div>
-            <div>Email:alex@gmail.com</div>
-            <div>Adresss:5033 NE 47th Pl, Portland, OR 97218</div>
-            <div>EDUCATION</div>
+            <div className="space-line name-title">{cvInfo.personal.name}</div>
+            <div className="space-line">Email:{cvInfo.personal.email}</div>
+            <div className="space-line">
+              Phone: {cvInfo.personal.phoneNumber}
+            </div>
+            <div className="space-line">Adresss:{cvInfo.personal.address}</div>
+
+            <div className="space-line">EDUCATION</div>
             <div className="seperate-line"></div>
             <EducationDisplayCard
               educationList={cvInfo.education}
             ></EducationDisplayCard>
 
-            <div>WORK EXPERIENCE</div>
+            <div className="space-line">WORK EXPERIENCE</div>
             <div className="seperate-line"></div>
             <ExperienceDisplayCard
               experienceList={cvInfo.experience}
